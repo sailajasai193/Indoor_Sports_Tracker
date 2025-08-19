@@ -1,0 +1,60 @@
+ html, body {
+   height: 60vh;/* Full height */
+  width: 100%; /* Full width */
+  margin: 0; /* Remove default margin */
+  
+} 
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 75vh;
+    background-color: lavenderblush;
+  }
+
+  .heading {
+        font-size: 28px;
+        margin-top: 100px;
+        text-align: center;
+        background-color: #add8e6;
+        color:black;
+  }
+  
+  .facility-block {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    background-color: #6c1b85;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .facility-block:hover {
+    transform: scale(1.1);
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .facility-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  

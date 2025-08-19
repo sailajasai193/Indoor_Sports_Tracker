@@ -1,0 +1,146 @@
+/* Import slick carousel styles */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+/* Set the overall background color */
+html, body {
+  height: 100%; /* Ensure full height for body */
+  margin: 0; /* Remove default margin */
+  background-color: #add8e6; /* Light blue background */
+}
+
+.admin-container {
+  max-width: 800px; /* Limit maximum width */
+  margin: auto; /* Center horizontally */
+  padding: 20px; /* Padding for container */
+  background-color: lavenderblush; /* Light background color for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
+  /* Centering */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.admin-title {
+  text-align: center; /* Center title */
+  font-size: 24px; /* Title font size */
+  margin: 60px 0 40px 0; /* Add margin-top for spacing from the header, bottom margin for spacing below */
+  color: #333; /* Dark color for visibility */
+}
+
+.check-in-out-carousel {
+  margin: 20px 0; /* Spacing around the carousel */
+  width: 100%; /* Full width for carousel */
+}
+
+/* Carousel section styles */
+.section {
+  margin: 0; /* Remove bottom margin */
+  padding: 15px; /* Padding inside sections */
+  background-color: #ffffff; /* White background for sections */
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Space below input groups */
+}
+
+.label {
+  font-weight: bold; /* Bold label text */
+}
+
+input,
+select {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in total width */
+}
+
+.submit-button,
+.checkout-button {
+  width: 30%; /* Full width for buttons */
+  padding: 10px; /* Padding inside buttons */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #6c1b85; /* Background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size for buttons */
+}
+
+.submit-button:hover,
+.checkout-button:hover {
+  background-color: #5b0f70; /* Darker shade on hover */
+}
+
+.student-list {
+  max-height: 300px; /* Limit height of student list */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.student-item {
+  display: flex; /* Use flexbox for student items */
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; /* Center align items */
+  padding: 10px; /* Padding for each student item */
+  border-bottom: 1px solid #eee; /* Bottom border for separation */
+}
+
+/* Style the carousel arrows */
+.slick-prev:before,
+.slick-next:before {
+  color:#5b0f70; /* Change the color to your desired color */
+  font-size: 24px; /* Adjust the size if needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .admin-title {
+    font-size: 20px; /* Smaller title font size */
+  }
+
+  .input-group select {
+    width: 100%; /* Full width for select */
+    padding: 10px; /* Padding inside select */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in total width */
+    max-height: 200px; /* Set a maximum height for the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Optionally, you can style the option elements as well */
+  .input-group select option {
+    padding: 10px; /* Padding for options */
+  }
+  
+  .input-group label {
+    font-size: 16px; /* Adjust label font size */
+  }
+
+  input,
+  select {
+    font-size: 14px; /* Adjust font size for inputs */
+  }
+
+  .submit-button,
+  .checkout-button {
+    font-size: 14px; /* Adjust font size for buttons */
+  }
+
+  .student-item {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+}

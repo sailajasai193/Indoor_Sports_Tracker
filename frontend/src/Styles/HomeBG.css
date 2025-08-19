@@ -1,0 +1,103 @@
+.home-background {
+    background-color:#A7C6ED; /* Light blue background color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;/* Minimum height for the viewport */
+}
+.explore-section {
+    margin-top: 100px; /* Space below the header */
+    background-color: lavender; /* Light gray background */
+    padding: 20px; /* Add padding for inner spacing */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center; /* Center the text */
+}
+
+.explore-section h5 {
+    font-size: 24px; /* Font size for the heading */
+    color:black; /* Dark color for visibility */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.explore-section p {
+    font-size: 18px; /* Font size for the paragraph */
+    color: black; /* Light gray for the paragraph */
+    line-height: 1.5; /* Line height */
+    max-width: 600px; /* Max width for paragraph */
+    margin: 0 auto; /* Center paragraph */
+}
+
+.content {
+    text-align: center; /* Center the content */
+}
+
+
+/* Gallery Section */
+.gallery {
+    display: flex; /* Use flexbox for the gallery layout */
+    justify-content: center; /* Center the flip card */
+    align-items: center; /* Center items vertically */
+    height: 64.5vh; /* Full viewport height */
+    margin: 0; /* Remove margin to avoid excess spacing */
+}
+
+/* Flip Card */
+
+.carousel-container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 5px solid lavender; /* Same color as the arrows */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    transform: translateY(350%); /* Align to middle */
+    width: 50px;
+    height: 50px;
+    background-color: violet; /* Match the border color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1; /* Ensure arrows appear above images */
+}
+.carousel-control-prev {
+    left: 250px; /* Move outside the left edge */
+}
+.carousel-control-next {
+    right: 250px; /* Move outside the right edge */
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional: Adjust the card for better visibility on smaller screens */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+    }  
+    .carousel-image {
+        height: 250px;
+    }
+    .carousel-control-prev {
+        left: -15px; /* Adjust position for smaller screens */
+    }
+    .carousel-control-next {
+        right: -15px; /* Adjust position for smaller screens */
+    }
+}

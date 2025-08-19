@@ -1,0 +1,142 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: lavender;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  top: 0;
+  padding: 0 20px;
+}
+.header-title {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color */
+}
+
+.header-title h1 {
+  font-size: 28px;
+  color: #0a45f7;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.logo-nav-new {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  max-width: 140px;
+  margin-right: 15px;
+}
+
+/* Remove underline from header title */
+.logo-nav-new h1 {
+  font-size: 28px;
+  color: #0a45f7;
+  margin: 0;
+  white-space: nowrap;
+  text-decoration: none; /* Ensure there's no underline */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-buttons {
+  display: flex; /* Ensure buttons are in line */
+  gap: 50px; /* Space between buttons */
+}
+
+.student-button,
+.admin-button {
+  background-color: #6c1b85; /* Adjust background color as needed */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student-button:hover,
+.admin-button:hover {
+  background-color: #5b0f70; /* Darker shade on hover */
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option {
+  padding: 15px 0;
+}
+
+.hi-username {
+  color: rgb(72, 15, 100);
+  font-weight: 800;
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+.logout-button {
+  background-color: #71138d;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1190px) {
+  .mobile-menu {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  /* Mobile Menu */
+  .nav-options {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 80px; /* Position below the header */
+    right: 0;
+    width: 250px;
+    background-color: #6c1b85ff;
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to fit */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    z-index: 200; /* Ensure it stays on top */
+  }
+
+  .nav-options.active {
+    display: flex; /* Show when active */
+  }
+
+  .nav-options .option {
+    padding: 10px 15px; /* Adjust padding for dropdown items */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional bottom border for separation */
+  }
+
+  .nav-options .option:last-child {
+    border-bottom: none; /* Remove border from last item */
+  }
+}

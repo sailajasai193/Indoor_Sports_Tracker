@@ -1,0 +1,57 @@
+/* About.css */
+
+.about-box {
+  background-color: lavender; /* Change to blue */
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%; /* Full width of the container */
+  max-width: none; /* Remove maximum width constraint */
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+.about-title {
+  text-align: center; /* Center the title */
+  color: #0a45f7; /* Change text color to white for contrast */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.about-data {
+  display: flex; /* Flexbox for layout */
+  flex-direction: row; /* Horizontal layout */
+  align-items: stretch; /* Stretch to fill container height */
+  justify-content: center; /* Center align the feature containers */
+  flex-wrap: wrap; /* Allow wrapping for responsive design */
+}
+
+.about-feature {
+  flex: 1; /* Flex-grow to take available space */
+  background-color: #fff; /* White background for features */
+  padding: 20px; /* Padding for feature boxes */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px; /* Space around feature boxes */
+  min-width: 250px; /* Minimum width for feature boxes */
+  display: flex; /* Enable flexbox for heading and paragraph */
+  flex-direction: column; /* Column layout */
+  text-align: center; /* Center text within feature boxes */
+}
+.about-feature h3 {
+  margin: 0; /* Remove margin for heading */
+  font-size: 1.25rem; /* Font size for heading */
+  white-space: nowrap; /* Prevent heading from wrapping to a new line */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+.about-feature p {
+  margin: 10px 0 0 0; /* Margin for paragraph */
+  flex-grow: 1; /* Allow paragraph to grow and fill space */
+}
+
+.contact-details {
+  text-align: center; /* Center contact details */
+  margin-top: 20px; /* Space above contact details */
+  font-size: 1rem; /* Font size for contact details */
+  color: #0a45f7; /* Change text color to white for contrast */
+}

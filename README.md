@@ -1,4 +1,4 @@
-link of our deployed website.
+Link of the deployed website.
 https://sportsoccupancytracker-frontend.onrender.com/
 
 Project Overview-
